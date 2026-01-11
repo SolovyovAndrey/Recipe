@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
   <meta charset="UTF-8">
-  <title>Mike's Hot Honey BBQ Ribs</title>
+  <title>Баранячі ребра в імбирно-медовому соусі</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
-      background: #222;
+      background: #222; /* Dark grey background */
       margin: 0;
       padding: 0;
-      color: #333;
+      color: #eee; /* Light text for contrast */
     }
     .container {
       max-width: 600px;
       margin: 40px auto;
-      background: #fff;
+      background: #333; /* Slightly lighter for the container */
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.08);
       padding: 32px;
     }
     h1 {
-      color: #b85c38;
+      color: #ffb85c;
       text-align: center;
     }
     img {
@@ -31,7 +31,7 @@
       border-radius: 6px;
     }
     h2 {
-      color: #4e342e;
+      color: #ffd38c;
       margin-top: 32px;
     }
     ul, ol {
@@ -73,112 +73,111 @@
 <body>
   <div class="container">
     <div class="lang-switcher">
-      <label for="language">Language:</label>
+      <label for="language">Мова / Language:</label>
       <select id="language">
+        <option value="ukr">Українська</option>
         <option value="en">English</option>
         <option value="fr">Français</option>
-        <option value="ukr">Українська</option>
       </select>
     </div>
-    <h1 id="title">Mike's Hot Honey BBQ Ribs</h1>
-    <img src="https://mikeshothoney.com/cdn/shop/articles/Ribs_with_hot_honey-5776.jpg?v=1745767675&width=1500">
-    <h2 id="ingredients-title">Ingredients</h2>
+    <h1 id="title">Баранячі ребра в імбирно-медовому соусі</h1>
+    <img src="https://stravy.net/wp-content/uploads/2021/04/baranyachi-rebra-v-imbirno-medovomu-sousi.jpg" alt="Баранячі ребра в імбирно-медовому соусі">
+    <h2 id="ingredients-title">Інгредієнти</h2>
     <ul id="ingredients-list">
-      <li>2 racks baby back ribs</li>
-      <li>Salt and pepper, to taste</li>
-      <li>1 cup BBQ sauce</li>
-      <li>1/4 cup Mike's Hot Honey</li>
-      <li>Optional: chopped parsley for garnish</li>
+      <li>Баранячі ребра</li>
+      <li>Вино</li>
+      <li>Мед</li>
+      <li>Кумін</li>
+      <li>Імбир</li>
+      <li>Сіль</li>
+      <li>Перець</li>
     </ul>
-    <h2 id="instructions-title">Instructions</h2>
+    <h2 id="instructions-title">Приготування</h2>
     <ol id="instructions-list">
-      <li>Preheat oven to 300°F (150°C).</li>
-      <li>Remove the thin membrane from the back of the ribs for tenderness.</li>
-      <li>Season both sides of the ribs with salt and pepper.</li>
-      <li>Wrap ribs in foil and place on a baking sheet. Bake for 2.5–3 hours until tender.</li>
-      <li>Mix BBQ sauce and Mike's Hot Honey in a bowl.</li>
-      <li>Remove ribs from oven, discard foil, and brush generously with the honey BBQ sauce.</li>
-      <li>Grill or broil ribs for 5–10 minutes until sauce is caramelized and sticky.</li>
-      <li>Slice, garnish with parsley if desired, and serve.</li>
+      <li>У невеликій ємності змішайте вино, мед, кумін, імбир, сіль і перець до отримання однорідної маси.</li>
+      <li>Баранячі ребра промийте під проточною водою та обсушіть паперовим рушником. Зайвий жир можна зрізати, але не повністю. Ребра можна розрізати по кісточках або залишити цілим пластом.</li>
+      <li>Візьміть великий шматок фольги, складіть його вдвічі і викладіть на нього ребра. Рясно змастіть ребра приготованим соусом з усіх боків.</li>
+      <li>Щільно загорніть м'ясо у фольгу, щоб не було порожніх місць і маринад не витікав. Залиште ребра маринуватися на одну годину, щоб вони просочилися соками та ароматами. Розігрійте духовку до 180 градусів і запікайте ребра протягом 1,5 години.</li>
+      <li>Готові реберця дістаньте з духовки, але не розгортайте фольгу одразу, щоб жир, що витопився, не застиг плівкою. Знімайте фольгу безпосередньо перед подачею. Страву можна подавати з гірчицею, аджикою, майонезом, кетчупом або іншими соусами.</li>
     </ol>
-    <button id="myButton">Say Hello</button>
+    <button id="myButton">Сказати Привіт</button>
     <div class="footer" id="footer">
-      &copy; 2026 Your Name. Recipe from <a href="https://mikeshothoney.com/blogs/recipes/mikes-hot-honey-bbq-ribs" target="_blank">Mike's Hot Honey</a>
+      &copy; 2026 Ваше ім'я. Рецепт з <a href="https://stravy.net/stravi-z-myasa/baranyachi-rebra-v-imbirno-medovomu-sousi.html" target="_blank">stravy.net</a>
     </div>
   </div>
   <script>
     const translations = {
-      en: {
-        title: "Mike's Hot Honey BBQ Ribs",
-        ingredientsTitle: "Ingredients",
-        ingredients: [
-          "2 racks baby back ribs",
-          "Salt and pepper, to taste",
-          "1 cup BBQ sauce",
-          "1/4 cup Mike's Hot Honey",
-          "Optional: chopped parsley for garnish"
-        ],
-        instructionsTitle: "Instructions",
-        instructions: [
-          "Preheat oven to 300°F (150°C).",
-          "Remove the thin membrane from the back of the ribs for tenderness.",
-          "Season both sides of the ribs with salt and pepper.",
-          "Wrap ribs in foil and place on a baking sheet. Bake for 2.5–3 hours until tender.",
-          "Mix BBQ sauce and Mike's Hot Honey in a bowl.",
-          "Remove ribs from oven, discard foil, and brush generously with the honey BBQ sauce.",
-          "Grill or broil ribs for 5–10 minutes until sauce is caramelized and sticky.",
-          "Slice, garnish with parsley if desired, and serve."
-        ],
-        button: "Say Hello",
-        footer: '&copy; 2026 Your Name. Recipe from <a href="https://mikeshothoney.com/blogs/recipes/mikes-hot-honey-bbq-ribs" target="_blank">Mike\'s Hot Honey</a>'
-      },
-      fr: {
-        title: "Côtes de porc BBQ au miel épicé de Mike",
-        ingredientsTitle: "Ingrédients",
-        ingredients: [
-          "2 travers de porc",
-          "Sel et poivre, au goût",
-          "1 tasse de sauce BBQ",
-          "1/4 tasse de miel épicé de Mike",
-          "Optionnel : persil haché pour la garniture"
-        ],
-        instructionsTitle: "Instructions",
-        instructions: [
-          "Préchauffez le four à 150°C (300°F).",
-          "Retirez la fine membrane au dos des côtes pour plus de tendreté.",
-          "Assaisonnez les deux côtés des côtes avec du sel et du poivre.",
-          "Enveloppez les côtes dans du papier aluminium et placez-les sur une plaque. Faites cuire 2,5 à 3 heures jusqu'à ce qu'elles soient tendres.",
-          "Mélangez la sauce BBQ et le miel épicé de Mike dans un bol.",
-          "Retirez les côtes du four, jetez le papier aluminium et badigeonnez généreusement avec la sauce au miel.",
-          "Grillez ou passez sous le gril 5 à 10 minutes jusqu'à ce que la sauce soit caramélisée et collante.",
-          "Coupez, garnissez de persil si désiré et servez."
-        ],
-        button: "Dire Bonjour",
-        footer: '&copy; 2026 Votre nom. Recette de <a href="https://mikeshothoney.com/blogs/recipes/mikes-hot-honey-bbq-ribs" target="_blank">Mike\'s Hot Honey</a>'
-      },
       ukr: {
-        title: "BBQ ребра з гострим медом Mike's",
+        title: "Баранячі ребра в імбирно-медовому соусі",
         ingredientsTitle: "Інгредієнти",
         ingredients: [
-          "2 порції свинячих ребер",
-          "Сіль і перець за смаком",
-          "1 склянка BBQ соусу",
-          "1/4 склянки гострого меду Mike's",
-          "За бажанням: подрібнена петрушка для прикраси"
+          "Баранячі ребра",
+          "Вино",
+          "Мед",
+          "Кумін",
+          "Імбир",
+          "Сіль",
+          "Перець"
         ],
-        instructionsTitle: "Інструкції",
+        instructionsTitle: "Приготування",
         instructions: [
-          "Розігрійте духовку до 150°C (300°F).",
-          "Зніміть тонку мембрану з задньої частини ребер для ніжності.",
-          "Приправте ребра сіллю та перцем з обох сторін.",
-          "Загорніть ребра у фольгу, покладіть на деко і запікайте 2,5–3 години до м'якості.",
-          "Змішайте BBQ соус і гострий мед Mike's у мисці.",
-          "Вийміть ребра з духовки, зніміть фольгу, щедро змастіть медовим BBQ соусом.",
-          "Готуйте на грилі або під грилем 5–10 хвилин, поки соус не стане карамелізованим і липким.",
-          "Наріжте, прикрасьте петрушкою за бажанням і подавайте."
+          "У невеликій ємності змішайте вино, мед, кумін, імбир, сіль і перець до отримання однорідної маси.",
+          "Баранячі ребра промийте під проточною водою та обсушіть паперовим рушником. Зайвий жир можна зрізати, але не повністю. Ребра можна розрізати по кісточках або залишити цілим пластом.",
+          "Візьміть великий шматок фольги, складіть його вдвічі і викладіть на нього ребра. Рясно змастіть ребра приготованим соусом з усіх боків.",
+          "Щільно загорніть м'ясо у фольгу, щоб не було порожніх місць і маринад не витікав. Залиште ребра маринуватися на одну годину, щоб вони просочилися соками та ароматами. Розігрійте духовку до 180 градусів і запікайте ребра протягом 1,5 години.",
+          "Готові реберця дістаньте з духовки, але не розгортайте фольгу одразу, щоб жир, що витопився, не застиг плівкою. Знімайте фольгу безпосередньо перед подачею. Страву можна подавати з гірчицею, аджикою, майонезом, кетчупом або іншими соусами."
         ],
         button: "Сказати Привіт",
-        footer: '&copy; 2026 Ваше ім\'я. Рецепт з <a href="https://mikeshothoney.com/blogs/recipes/mikes-hot-honey-bbq-ribs" target="_blank">Mike\'s Hot Honey</a>'
+        footer: '&copy; 2026 Ваше ім\'я. Рецепт з <a href="https://stravy.net/stravi-z-myasa/baranyachi-rebra-v-imbirno-medovomu-sousi.html" target="_blank">stravy.net</a>',
+        alert: "Вітаю, смачного!"
+      },
+      en: {
+        title: "Lamb Ribs in Ginger-Honey Sauce",
+        ingredientsTitle: "Ingredients",
+        ingredients: [
+          "Lamb ribs",
+          "Wine",
+          "Honey",
+          "Cumin",
+          "Ginger",
+          "Salt",
+          "Pepper"
+        ],
+        instructionsTitle: "Instructions",
+        instructions: [
+          "In a small bowl, mix wine, honey, cumin, ginger, salt, and pepper until smooth.",
+          "Rinse lamb ribs under running water and pat dry with a paper towel. Trim excess fat if desired. You can cut the ribs individually or leave them as a slab.",
+          "Take a large piece of foil, fold it in half, and place the ribs on it. Generously coat the ribs with the prepared sauce on all sides.",
+          "Wrap the meat tightly in foil so there are no empty spaces and the marinade doesn't leak. Let the ribs marinate for one hour. Preheat the oven to 180°C (356°F) and bake the ribs for 1.5 hours.",
+          "Remove the ribs from the oven, but do not unwrap the foil immediately so the rendered fat does not solidify. Unwrap the foil just before serving. Serve with mustard, adjika, mayonnaise, ketchup, or other sauces."
+        ],
+        button: "Say Hello",
+        footer: '&copy; 2026 Your Name. Recipe from <a href="https://stravy.net/stravi-z-myasa/baranyachi-rebra-v-imbirno-medovomu-sousi.html" target="_blank">stravy.net</a>',
+        alert: "Hello, enjoy your meal!"
+      },
+      fr: {
+        title: "Côtes d'agneau à la sauce gingembre-miel",
+        ingredientsTitle: "Ingrédients",
+        ingredients: [
+          "Côtes d'agneau",
+          "Vin",
+          "Miel",
+          "Cumin",
+          "Gingembre",
+          "Sel",
+          "Poivre"
+        ],
+        instructionsTitle: "Instructions",
+        instructions: [
+          "Dans un petit bol, mélangez le vin, le miel, le cumin, le gingembre, le sel et le poivre jusqu'à obtenir une sauce homogène.",
+          "Rincez les côtes d'agneau à l'eau courante et séchez-les avec du papier absorbant. Retirez l'excès de graisse si vous le souhaitez. Vous pouvez couper les côtes individuellement ou les laisser en un seul morceau.",
+          "Prenez une grande feuille de papier aluminium, pliez-la en deux et placez les côtes dessus. Enduisez généreusement les côtes de la sauce préparée sur tous les côtés.",
+          "Enveloppez la viande hermétiquement dans la feuille pour éviter les espaces vides et les fuites de marinade. Laissez mariner pendant une heure. Préchauffez le four à 180°C et faites cuire les côtes pendant 1,5 heure.",
+          "Sortez les côtes du four, mais ne retirez pas immédiatement la feuille pour éviter que la graisse ne fige. Retirez la feuille juste avant de servir. Servez avec de la moutarde, de l'adjika, de la mayonnaise, du ketchup ou d'autres sauces."
+        ],
+        button: "Dire Bonjour",
+        footer: '&copy; 2026 Votre nom. Recette de <a href="https://stravy.net/stravi-z-myasa/baranyachi-rebra-v-imbirno-medovomu-sousi.html" target="_blank">stravy.net</a>',
+        alert: "Bonjour, bon appétit !"
       }
     };
 
@@ -210,6 +209,11 @@
 
       // Footer
       document.getElementById('footer').innerHTML = translations[lang].footer;
+
+      // Button alert
+      document.getElementById('myButton').onclick = function() {
+        alert(translations[lang].alert);
+      };
     }
 
     document.getElementById('language').addEventListener('change', function() {
@@ -217,11 +221,7 @@
     });
 
     // Set default language
-    setLanguage('en');
-
-    document.getElementById('myButton').onclick = function() {
-      alert('Hello, and enjoy your meal!');
-    };
+    setLanguage('ukr');
   </script>
 </body>
 </html>
