@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Spaghetti Carbonara Recipe</title>
+  <title>Mike's Hot Honey BBQ Ribs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
@@ -60,38 +60,165 @@
       color: #aaa;
       font-size: 0.9em;
     }
+    .lang-switcher {
+      text-align: right;
+      margin-bottom: 16px;
+    }
+    .lang-switcher select {
+      padding: 4px 8px;
+      font-size: 1em;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Spaghetti Carbonara</h1>
-    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Spaghetti Carbonara">
-    <h2>Ingredients</h2>
-    <ul>
-      <li>200g spaghetti</li>
-      <li>100g pancetta or bacon, diced</li>
-      <li>2 large eggs</li>
-      <li>50g grated Parmesan cheese</li>
-      <li>2 cloves garlic, minced</li>
-      <li>Salt & freshly ground black pepper</li>
-      <li>Fresh parsley (optional, for garnish)</li>
+    <div class="lang-switcher">
+      <label for="language">Language:</label>
+      <select id="language">
+        <option value="en">English</option>
+        <option value="fr">Français</option>
+        <option value="ukr">Українська</option>
+      </select>
+    </div>
+    <h1 id="title">Mike's Hot Honey BBQ Ribs</h1>
+    <img src="https://cdn.shopify.com/s/files/1/0551/9247/9636/articles/BBQ_Ribs_Recipe_1200x1200.jpg?v=1656618572" alt="Mike's Hot Honey BBQ Ribs">
+    <h2 id="ingredients-title">Ingredients</h2>
+    <ul id="ingredients-list">
+      <li>2 racks baby back ribs</li>
+      <li>Salt and pepper, to taste</li>
+      <li>1 cup BBQ sauce</li>
+      <li>1/4 cup Mike's Hot Honey</li>
+      <li>Optional: chopped parsley for garnish</li>
     </ul>
-    <h2>Instructions</h2>
-    <ol>
-      <li>Cook the spaghetti in a large pot of salted boiling water until al dente. Reserve 1/2 cup of pasta water, then drain.</li>
-      <li>While the pasta cooks, fry the pancetta in a large pan over medium heat until crispy. Add garlic and cook for 1 minute.</li>
-      <li>In a bowl, whisk together eggs and Parmesan cheese.</li>
-      <li>Add the drained spaghetti to the pan with pancetta. Remove from heat.</li>
-      <li>Quickly pour in the egg and cheese mixture, tossing rapidly to coat the pasta (the heat will cook the eggs and create a creamy sauce).</li>
-      <li>If needed, add a splash of reserved pasta water to loosen the sauce.</li>
-      <li>Season with salt and plenty of black pepper. Serve immediately, garnished with parsley and extra Parmesan.</li>
+    <h2 id="instructions-title">Instructions</h2>
+    <ol id="instructions-list">
+      <li>Preheat oven to 300°F (150°C).</li>
+      <li>Remove the thin membrane from the back of the ribs for tenderness.</li>
+      <li>Season both sides of the ribs with salt and pepper.</li>
+      <li>Wrap ribs in foil and place on a baking sheet. Bake for 2.5–3 hours until tender.</li>
+      <li>Mix BBQ sauce and Mike's Hot Honey in a bowl.</li>
+      <li>Remove ribs from oven, discard foil, and brush generously with the honey BBQ sauce.</li>
+      <li>Grill or broil ribs for 5–10 minutes until sauce is caramelized and sticky.</li>
+      <li>Slice, garnish with parsley if desired, and serve.</li>
     </ol>
     <button id="myButton">Say Hello</button>
-    <div class="footer">
-      &copy; 2026 Your Name. Enjoy your meal!
+    <div class="footer" id="footer">
+      &copy; 2026 Your Name. Recipe from <a href="https://mikeshothoney.com/blogs/recipes/mikes-hot-honey-bbq-ribs" target="_blank">Mike's Hot Honey</a>
     </div>
   </div>
   <script>
+    const translations = {
+      en: {
+        title: "Mike's Hot Honey BBQ Ribs",
+        ingredientsTitle: "Ingredients",
+        ingredients: [
+          "2 racks baby back ribs",
+          "Salt and pepper, to taste",
+          "1 cup BBQ sauce",
+          "1/4 cup Mike's Hot Honey",
+          "Optional: chopped parsley for garnish"
+        ],
+        instructionsTitle: "Instructions",
+        instructions: [
+          "Preheat oven to 300°F (150°C).",
+          "Remove the thin membrane from the back of the ribs for tenderness.",
+          "Season both sides of the ribs with salt and pepper.",
+          "Wrap ribs in foil and place on a baking sheet. Bake for 2.5–3 hours until tender.",
+          "Mix BBQ sauce and Mike's Hot Honey in a bowl.",
+          "Remove ribs from oven, discard foil, and brush generously with the honey BBQ sauce.",
+          "Grill or broil ribs for 5–10 minutes until sauce is caramelized and sticky.",
+          "Slice, garnish with parsley if desired, and serve."
+        ],
+        button: "Say Hello",
+        footer: '&copy; 2026 Your Name. Recipe from <a href="https://mikeshothoney.com/blogs/recipes/mikes-hot-honey-bbq-ribs" target="_blank">Mike\'s Hot Honey</a>'
+      },
+      fr: {
+        title: "Côtes de porc BBQ au miel épicé de Mike",
+        ingredientsTitle: "Ingrédients",
+        ingredients: [
+          "2 travers de porc",
+          "Sel et poivre, au goût",
+          "1 tasse de sauce BBQ",
+          "1/4 tasse de miel épicé de Mike",
+          "Optionnel : persil haché pour la garniture"
+        ],
+        instructionsTitle: "Instructions",
+        instructions: [
+          "Préchauffez le four à 150°C (300°F).",
+          "Retirez la fine membrane au dos des côtes pour plus de tendreté.",
+          "Assaisonnez les deux côtés des côtes avec du sel et du poivre.",
+          "Enveloppez les côtes dans du papier aluminium et placez-les sur une plaque. Faites cuire 2,5 à 3 heures jusqu'à ce qu'elles soient tendres.",
+          "Mélangez la sauce BBQ et le miel épicé de Mike dans un bol.",
+          "Retirez les côtes du four, jetez le papier aluminium et badigeonnez généreusement avec la sauce au miel.",
+          "Grillez ou passez sous le gril 5 à 10 minutes jusqu'à ce que la sauce soit caramélisée et collante.",
+          "Coupez, garnissez de persil si désiré et servez."
+        ],
+        button: "Dire Bonjour",
+        footer: '&copy; 2026 Votre nom. Recette de <a href="https://mikeshothoney.com/blogs/recipes/mikes-hot-honey-bbq-ribs" target="_blank">Mike\'s Hot Honey</a>'
+      },
+      ukr: {
+        title: "BBQ ребра з гострим медом Mike's",
+        ingredientsTitle: "Інгредієнти",
+        ingredients: [
+          "2 порції свинячих ребер",
+          "Сіль і перець за смаком",
+          "1 склянка BBQ соусу",
+          "1/4 склянки гострого меду Mike's",
+          "За бажанням: подрібнена петрушка для прикраси"
+        ],
+        instructionsTitle: "Інструкції",
+        instructions: [
+          "Розігрійте духовку до 150°C (300°F).",
+          "Зніміть тонку мембрану з задньої частини ребер для ніжності.",
+          "Приправте ребра сіллю та перцем з обох сторін.",
+          "Загорніть ребра у фольгу, покладіть на деко і запікайте 2,5–3 години до м'якості.",
+          "Змішайте BBQ соус і гострий мед Mike's у мисці.",
+          "Вийміть ребра з духовки, зніміть фольгу, щедро змастіть медовим BBQ соусом.",
+          "Готуйте на грилі або під грилем 5–10 хвилин, поки соус не стане карамелізованим і липким.",
+          "Наріжте, прикрасьте петрушкою за бажанням і подавайте."
+        ],
+        button: "Сказати Привіт",
+        footer: '&copy; 2026 Ваше ім\'я. Рецепт з <a href="https://mikeshothoney.com/blogs/recipes/mikes-hot-honey-bbq-ribs" target="_blank">Mike\'s Hot Honey</a>'
+      }
+    };
+
+    function setLanguage(lang) {
+      document.getElementById('title').innerHTML = translations[lang].title;
+      document.getElementById('ingredients-title').innerHTML = translations[lang].ingredientsTitle;
+      document.getElementById('instructions-title').innerHTML = translations[lang].instructionsTitle;
+
+      // Ingredients
+      const ingredientsList = document.getElementById('ingredients-list');
+      ingredientsList.innerHTML = '';
+      translations[lang].ingredients.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item;
+        ingredientsList.appendChild(li);
+      });
+
+      // Instructions
+      const instructionsList = document.getElementById('instructions-list');
+      instructionsList.innerHTML = '';
+      translations[lang].instructions.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item;
+        instructionsList.appendChild(li);
+      });
+
+      // Button
+      document.getElementById('myButton').textContent = translations[lang].button;
+
+      // Footer
+      document.getElementById('footer').innerHTML = translations[lang].footer;
+    }
+
+    document.getElementById('language').addEventListener('change', function() {
+      setLanguage(this.value);
+    });
+
+    // Set default language
+    setLanguage('en');
+
     document.getElementById('myButton').onclick = function() {
       alert('Hello, and enjoy your meal!');
     };
